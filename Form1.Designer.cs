@@ -180,6 +180,7 @@ namespace Student_Registration_Form
             this.close_button.Size = new System.Drawing.Size(90, 89);
             this.close_button.TabIndex = 0;
             this.close_button.TabStop = false;
+            this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
             // label_first_name
             // 
@@ -349,20 +350,6 @@ namespace Student_Registration_Form
             this.month_combo_box.HoverState.Parent = this.month_combo_box;
             this.month_combo_box.IntegralHeight = false;
             this.month_combo_box.ItemHeight = 28;
-            this.month_combo_box.Items.AddRange(new object[] {
-            "-Month-",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"});
             this.month_combo_box.ItemsAppearance.Parent = this.month_combo_box;
             this.month_combo_box.Location = new System.Drawing.Point(117, 358);
             this.month_combo_box.MaxDropDownItems = 10;
@@ -386,18 +373,6 @@ namespace Student_Registration_Form
             this.year_combo_box.HoverState.Parent = this.year_combo_box;
             this.year_combo_box.IntegralHeight = false;
             this.year_combo_box.ItemHeight = 28;
-            this.year_combo_box.Items.AddRange(new object[] {
-            "-Year-",
-            "2001",
-            "2002",
-            "2003",
-            "2004",
-            "2005",
-            "2006",
-            "2007",
-            "2008",
-            "2009",
-            "2010"});
             this.year_combo_box.ItemsAppearance.Parent = this.year_combo_box;
             this.year_combo_box.Location = new System.Drawing.Point(225, 358);
             this.year_combo_box.MaxDropDownItems = 10;
@@ -447,20 +422,6 @@ namespace Student_Registration_Form
             this.day_combo_box.HoverState.Parent = this.day_combo_box;
             this.day_combo_box.IntegralHeight = false;
             this.day_combo_box.ItemHeight = 28;
-            this.day_combo_box.Items.AddRange(new object[] {
-            "-Day",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"});
             this.day_combo_box.ItemsAppearance.Parent = this.day_combo_box;
             this.day_combo_box.Location = new System.Drawing.Point(9, 358);
             this.day_combo_box.MaxDropDownItems = 10;
@@ -503,6 +464,7 @@ namespace Student_Registration_Form
             this.Name = "RegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Registration Form";
+            this.Load += new System.EventHandler(this.RegistrationForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.artwork_panel.ResumeLayout(false);
             this.form_panel.ResumeLayout(false);
