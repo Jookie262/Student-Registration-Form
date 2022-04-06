@@ -72,6 +72,7 @@ namespace Student_Registration_Form
             this.artwork_panel.Name = "artwork_panel";
             this.artwork_panel.Size = new System.Drawing.Size(392, 600);
             this.artwork_panel.TabIndex = 0;
+            this.artwork_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
             // form_panel
             // 
@@ -95,6 +96,7 @@ namespace Student_Registration_Form
             this.table_layout_registration_form.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.table_layout_registration_form.Size = new System.Drawing.Size(410, 600);
             this.table_layout_registration_form.TabIndex = 0;
+            this.table_layout_registration_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
             // register_form
             // 
@@ -139,7 +141,7 @@ namespace Student_Registration_Form
             this.head_register_form.Name = "head_register_form";
             this.head_register_form.Size = new System.Drawing.Size(339, 76);
             this.head_register_form.TabIndex = 2;
-            this.head_register_form.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.head_register_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
             // footer_register_form
             // 
@@ -149,6 +151,7 @@ namespace Student_Registration_Form
             this.footer_register_form.Name = "footer_register_form";
             this.footer_register_form.Size = new System.Drawing.Size(339, 41);
             this.footer_register_form.TabIndex = 3;
+            this.footer_register_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
             // register_button
             // 
@@ -225,7 +228,6 @@ namespace Student_Registration_Form
             this.middle_name_textbox.ShadowDecoration.Parent = this.middle_name_textbox;
             this.middle_name_textbox.Size = new System.Drawing.Size(317, 36);
             this.middle_name_textbox.TabIndex = 2;
-            this.middle_name_textbox.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // label_last_name
             // 
@@ -487,7 +489,7 @@ namespace Student_Registration_Form
             this.body_register_form.Name = "body_register_form";
             this.body_register_form.Size = new System.Drawing.Size(339, 412);
             this.body_register_form.TabIndex = 4;
-            this.body_register_form.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            this.body_register_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
             // RegistrationForm
             // 
@@ -501,6 +503,7 @@ namespace Student_Registration_Form
             this.Name = "RegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Registration Form";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.artwork_panel.ResumeLayout(false);
             this.form_panel.ResumeLayout(false);
             this.table_layout_registration_form.ResumeLayout(false);
