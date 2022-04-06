@@ -20,6 +20,10 @@ namespace Student_Registration_Form
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
+        // Variables for the register form
+        string first_name, middle_name, last_name;
+        int day, month, year;
+
         // Constructor
         public RegistrationForm()
         {
@@ -51,6 +55,19 @@ namespace Student_Registration_Form
             Application.Exit();
         }
 
+        // When clicking the register button
+        private void register_button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fetchData();
+            } 
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please input all the fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         // Method for the Default value of the Combobox
         public void setDefaultValue()
         {
@@ -70,7 +87,7 @@ namespace Student_Registration_Form
         // Method that populates the Day Combobox
         public void populateDay()
         {
-            for(int x = 1; x <= 31; x++) day_combo_box.Items.Add(x);
+            for (int x = 1; x <= 31; x++) day_combo_box.Items.Add(x);
         }
 
         // Method that populates the Month Combobox
@@ -83,6 +100,34 @@ namespace Student_Registration_Form
         public void populateYear()
         {
             for (int x = 1900; x <= DateTime.Now.Year; x++) year_combo_box.Items.Add(x);
+        }
+
+        // Method of fetching the data that is written by the user
+        public void fetchData()
+        {
+            // Fetching the name
+            first_name = first_name_textbox.Text;
+            middle_name = middle_name_textbox.Text;
+            last_name = last_name_textbox.Text;
+
+            // Call the checker method 
+            checkNull(first_name);
+            checkNull(middle_name);
+            checkNull(last_name);
+
+            // Fetching the date of birth
+            day = Int32.Parse(day_combo_box.Text);
+            month = Int32.Parse(month_combo_box.Text);
+            year = Int32.Parse(year_combo_box.Text);
+
+            // Throws an exception if either of them are not selected
+            if (!male_radio_button.Checked && !female_radio_button.Checked) throw new Exception();
+        }
+
+        // Check if the field is null or empty then throws an exception
+        public void checkNull(string data)
+        {
+            if (data == null || data.Trim() == "") throw new Exception();
         }
     }
 }
