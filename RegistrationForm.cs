@@ -23,6 +23,7 @@ namespace Student_Registration_Form
         // Variables for the register form
         string first_name, middle_name, last_name;
         int day, month, year;
+        bool isMale;
 
         // Constructor
         public RegistrationForm()
@@ -61,6 +62,7 @@ namespace Student_Registration_Form
             try
             {
                 fetchData();
+                new OutputForm(outputText()).ShowDialog(this);
             } 
             catch (Exception ex)
             {
@@ -122,12 +124,23 @@ namespace Student_Registration_Form
 
             // Throws an exception if either of them are not selected
             if (!male_radio_button.Checked && !female_radio_button.Checked) throw new Exception();
+
+            // set isMale to true when selected else false
+            if (male_radio_button.Checked) isMale = true; else isMale = false;
         }
 
         // Check if the field is null or empty then throws an exception
         public void checkNull(string data)
         {
             if (data == null || data.Trim() == "") throw new Exception();
+        }
+
+        // Method that returns the output of the program
+        public string outputText()
+        {
+            return string.Format(
+                "Student name:\n{0} {1} {2}\n\n" + "Gender:\n{3}\n\n" + "Date of birth:\n{4}/{5}/{6}\n",
+                first_name, middle_name, last_name, (isMale ? "Male" : "Female"),day, month, year);
         }
     }
 }

@@ -12,9 +12,22 @@ namespace Student_Registration_Form
 {
     public partial class OutputForm : Form
     {
-        public OutputForm()
+        string output;
+
+        public OutputForm(string output)
         {
+            this.output = output;
             InitializeComponent();
+        }
+
+        private void OutputForm_Load(object sender, EventArgs e)
+        {
+            output_label.Text = output;
+        }
+
+        private void close_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -116,9 +116,9 @@ namespace Student_Registration_Form
             this.register_form.Controls.Add(this.body_register_form);
             this.register_form.Controls.Add(this.footer_register_form);
             this.register_form.Controls.Add(this.head_register_form);
-            this.register_form.Location = new System.Drawing.Point(35, 35);
+            this.register_form.Location = new System.Drawing.Point(35, 37);
             this.register_form.Name = "register_form";
-            this.register_form.Size = new System.Drawing.Size(339, 529);
+            this.register_form.Size = new System.Drawing.Size(339, 525);
             this.register_form.TabIndex = 0;
             // 
             // body_register_form
@@ -139,7 +139,7 @@ namespace Student_Registration_Form
             this.body_register_form.Dock = System.Windows.Forms.DockStyle.Fill;
             this.body_register_form.Location = new System.Drawing.Point(0, 76);
             this.body_register_form.Name = "body_register_form";
-            this.body_register_form.Size = new System.Drawing.Size(339, 412);
+            this.body_register_form.Size = new System.Drawing.Size(339, 408);
             this.body_register_form.TabIndex = 4;
             this.body_register_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
@@ -159,7 +159,7 @@ namespace Student_Registration_Form
             this.day_combo_box.IntegralHeight = false;
             this.day_combo_box.ItemHeight = 28;
             this.day_combo_box.ItemsAppearance.Parent = this.day_combo_box;
-            this.day_combo_box.Location = new System.Drawing.Point(9, 358);
+            this.day_combo_box.Location = new System.Drawing.Point(9, 356);
             this.day_combo_box.MaxDropDownItems = 10;
             this.day_combo_box.Name = "day_combo_box";
             this.day_combo_box.ShadowDecoration.Parent = this.day_combo_box;
@@ -182,7 +182,7 @@ namespace Student_Registration_Form
             this.first_name_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
             this.first_name_textbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.first_name_textbox.HoverState.Parent = this.first_name_textbox;
-            this.first_name_textbox.Location = new System.Drawing.Point(9, 46);
+            this.first_name_textbox.Location = new System.Drawing.Point(9, 44);
             this.first_name_textbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.first_name_textbox.Name = "first_name_textbox";
             this.first_name_textbox.PasswordChar = '\0';
@@ -208,7 +208,7 @@ namespace Student_Registration_Form
             this.year_combo_box.IntegralHeight = false;
             this.year_combo_box.ItemHeight = 28;
             this.year_combo_box.ItemsAppearance.Parent = this.year_combo_box;
-            this.year_combo_box.Location = new System.Drawing.Point(225, 358);
+            this.year_combo_box.Location = new System.Drawing.Point(225, 356);
             this.year_combo_box.MaxDropDownItems = 10;
             this.year_combo_box.Name = "year_combo_box";
             this.year_combo_box.ShadowDecoration.Parent = this.year_combo_box;
@@ -231,7 +231,7 @@ namespace Student_Registration_Form
             this.month_combo_box.IntegralHeight = false;
             this.month_combo_box.ItemHeight = 28;
             this.month_combo_box.ItemsAppearance.Parent = this.month_combo_box;
-            this.month_combo_box.Location = new System.Drawing.Point(117, 358);
+            this.month_combo_box.Location = new System.Drawing.Point(117, 356);
             this.month_combo_box.MaxDropDownItems = 10;
             this.month_combo_box.Name = "month_combo_box";
             this.month_combo_box.ShadowDecoration.Parent = this.month_combo_box;
@@ -243,7 +243,7 @@ namespace Student_Registration_Form
             this.label_date_of_birth.AutoSize = true;
             this.label_date_of_birth.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_date_of_birth.ForeColor = System.Drawing.Color.White;
-            this.label_date_of_birth.Location = new System.Drawing.Point(9, 328);
+            this.label_date_of_birth.Location = new System.Drawing.Point(9, 326);
             this.label_date_of_birth.Name = "label_date_of_birth";
             this.label_date_of_birth.Size = new System.Drawing.Size(106, 20);
             this.label_date_of_birth.TabIndex = 0;
@@ -260,7 +260,7 @@ namespace Student_Registration_Form
             this.female_radio_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.female_radio_button.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.female_radio_button.ForeColor = System.Drawing.Color.White;
-            this.female_radio_button.Location = new System.Drawing.Point(76, 288);
+            this.female_radio_button.Location = new System.Drawing.Point(76, 286);
             this.female_radio_button.Name = "female_radio_button";
             this.female_radio_button.Size = new System.Drawing.Size(77, 23);
             this.female_radio_button.TabIndex = 5;
@@ -283,7 +283,7 @@ namespace Student_Registration_Form
             this.male_radio_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.male_radio_button.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.male_radio_button.ForeColor = System.Drawing.Color.White;
-            this.male_radio_button.Location = new System.Drawing.Point(9, 288);
+            this.male_radio_button.Location = new System.Drawing.Point(9, 286);
             this.male_radio_button.Name = "male_radio_button";
             this.male_radio_button.Size = new System.Drawing.Size(61, 23);
             this.male_radio_button.TabIndex = 4;
@@ -300,7 +300,7 @@ namespace Student_Registration_Form
             this.label_gender.AutoSize = true;
             this.label_gender.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_gender.ForeColor = System.Drawing.Color.White;
-            this.label_gender.Location = new System.Drawing.Point(5, 258);
+            this.label_gender.Location = new System.Drawing.Point(5, 256);
             this.label_gender.Name = "label_gender";
             this.label_gender.Size = new System.Drawing.Size(65, 20);
             this.label_gender.TabIndex = 0;
@@ -322,7 +322,7 @@ namespace Student_Registration_Form
             this.last_name_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
             this.last_name_textbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.last_name_textbox.HoverState.Parent = this.last_name_textbox;
-            this.last_name_textbox.Location = new System.Drawing.Point(9, 206);
+            this.last_name_textbox.Location = new System.Drawing.Point(9, 204);
             this.last_name_textbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.last_name_textbox.Name = "last_name_textbox";
             this.last_name_textbox.PasswordChar = '\0';
@@ -337,7 +337,7 @@ namespace Student_Registration_Form
             this.label_last_name.AutoSize = true;
             this.label_last_name.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_last_name.ForeColor = System.Drawing.Color.White;
-            this.label_last_name.Location = new System.Drawing.Point(5, 176);
+            this.label_last_name.Location = new System.Drawing.Point(5, 174);
             this.label_last_name.Name = "label_last_name";
             this.label_last_name.Size = new System.Drawing.Size(90, 20);
             this.label_last_name.TabIndex = 0;
@@ -359,7 +359,7 @@ namespace Student_Registration_Form
             this.middle_name_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
             this.middle_name_textbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.middle_name_textbox.HoverState.Parent = this.middle_name_textbox;
-            this.middle_name_textbox.Location = new System.Drawing.Point(9, 126);
+            this.middle_name_textbox.Location = new System.Drawing.Point(9, 124);
             this.middle_name_textbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.middle_name_textbox.Name = "middle_name_textbox";
             this.middle_name_textbox.PasswordChar = '\0';
@@ -374,7 +374,7 @@ namespace Student_Registration_Form
             this.label_middle_name.AutoSize = true;
             this.label_middle_name.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_middle_name.ForeColor = System.Drawing.Color.White;
-            this.label_middle_name.Location = new System.Drawing.Point(5, 96);
+            this.label_middle_name.Location = new System.Drawing.Point(5, 94);
             this.label_middle_name.Name = "label_middle_name";
             this.label_middle_name.Size = new System.Drawing.Size(112, 20);
             this.label_middle_name.TabIndex = 0;
@@ -385,7 +385,7 @@ namespace Student_Registration_Form
             this.label_first_name.AutoSize = true;
             this.label_first_name.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_first_name.ForeColor = System.Drawing.Color.White;
-            this.label_first_name.Location = new System.Drawing.Point(5, 16);
+            this.label_first_name.Location = new System.Drawing.Point(5, 14);
             this.label_first_name.Name = "label_first_name";
             this.label_first_name.Size = new System.Drawing.Size(91, 20);
             this.label_first_name.TabIndex = 0;
@@ -395,7 +395,7 @@ namespace Student_Registration_Form
             // 
             this.footer_register_form.Controls.Add(this.register_button);
             this.footer_register_form.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.footer_register_form.Location = new System.Drawing.Point(0, 488);
+            this.footer_register_form.Location = new System.Drawing.Point(0, 484);
             this.footer_register_form.Name = "footer_register_form";
             this.footer_register_form.Size = new System.Drawing.Size(339, 41);
             this.footer_register_form.TabIndex = 3;
