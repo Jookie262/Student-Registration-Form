@@ -1,4 +1,4 @@
-# Student Registration Form
+# Student Registration Form 🎓 
 A C# activity in the subject Integrative Programming that aims to create a student registration form in winform. I made the UI more interesting than the original. The program uses **.Net Framework version 4.6.1**. 
 
 ## Screen Shot 📷
