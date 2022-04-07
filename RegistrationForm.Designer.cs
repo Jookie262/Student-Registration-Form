@@ -30,31 +30,31 @@ namespace Student_Registration_Form
         private void InitializeComponent()
         {
             this.artwork_panel = new System.Windows.Forms.Panel();
-            this.close_button = new System.Windows.Forms.PictureBox();
+            this.closeButton = new System.Windows.Forms.PictureBox();
             this.form_panel = new System.Windows.Forms.Panel();
             this.table_layout_registration_form = new System.Windows.Forms.TableLayoutPanel();
             this.register_form = new System.Windows.Forms.Panel();
             this.body_register_form = new System.Windows.Forms.Panel();
-            this.day_combo_box = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.first_name_textbox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.year_combo_box = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.month_combo_box = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label_date_of_birth = new System.Windows.Forms.Label();
-            this.female_radio_button = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.male_radio_button = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.label_gender = new System.Windows.Forms.Label();
-            this.last_name_textbox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label_last_name = new System.Windows.Forms.Label();
-            this.middle_name_textbox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label_middle_name = new System.Windows.Forms.Label();
-            this.label_first_name = new System.Windows.Forms.Label();
+            this.DayComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.FirstNameTextbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.YearComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.MonthComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.DateOfBirthLabel = new System.Windows.Forms.Label();
+            this.FemaleRadioButton = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.MaleRadioButton = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.GenderLabel = new System.Windows.Forms.Label();
+            this.LastNameTextbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.LastNameLabel = new System.Windows.Forms.Label();
+            this.MiddleNameTextbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.MiddleNameLabel = new System.Windows.Forms.Label();
+            this.FirstNameLabel = new System.Windows.Forms.Label();
             this.footer_register_form = new System.Windows.Forms.Panel();
-            this.register_button = new Guna.UI2.WinForms.Guna2Button();
+            this.RegisterButton = new Guna.UI2.WinForms.Guna2Button();
             this.head_register_form = new System.Windows.Forms.Panel();
-            this.label_registration_form = new System.Windows.Forms.Label();
-            this.label_student = new System.Windows.Forms.Label();
+            this.RegistrationFormLabel = new System.Windows.Forms.Label();
+            this.StudentLabel = new System.Windows.Forms.Label();
             this.artwork_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.close_button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
             this.form_panel.SuspendLayout();
             this.table_layout_registration_form.SuspendLayout();
             this.register_form.SuspendLayout();
@@ -66,7 +66,7 @@ namespace Student_Registration_Form
             // artwork_panel
             // 
             this.artwork_panel.BackgroundImage = global::Student_Registration_Form.Properties.Resources.artwork;
-            this.artwork_panel.Controls.Add(this.close_button);
+            this.artwork_panel.Controls.Add(this.closeButton);
             this.artwork_panel.Dock = System.Windows.Forms.DockStyle.Right;
             this.artwork_panel.Location = new System.Drawing.Point(408, 0);
             this.artwork_panel.Name = "artwork_panel";
@@ -74,17 +74,17 @@ namespace Student_Registration_Form
             this.artwork_panel.TabIndex = 0;
             this.artwork_panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
-            // close_button
+            // closeButton
             // 
-            this.close_button.BackColor = System.Drawing.Color.Transparent;
-            this.close_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.close_button.Image = global::Student_Registration_Form.Properties.Resources.close_button;
-            this.close_button.Location = new System.Drawing.Point(302, -13);
-            this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(90, 89);
-            this.close_button.TabIndex = 0;
-            this.close_button.TabStop = false;
-            this.close_button.Click += new System.EventHandler(this.close_button_Click);
+            this.closeButton.BackColor = System.Drawing.Color.Transparent;
+            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeButton.Image = global::Student_Registration_Form.Properties.Resources.close_button;
+            this.closeButton.Location = new System.Drawing.Point(302, -13);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(90, 89);
+            this.closeButton.TabIndex = 0;
+            this.closeButton.TabStop = false;
+            this.closeButton.Click += new System.EventHandler(this.close_button_Click);
             // 
             // form_panel
             // 
@@ -123,19 +123,19 @@ namespace Student_Registration_Form
             // 
             // body_register_form
             // 
-            this.body_register_form.Controls.Add(this.day_combo_box);
-            this.body_register_form.Controls.Add(this.first_name_textbox);
-            this.body_register_form.Controls.Add(this.year_combo_box);
-            this.body_register_form.Controls.Add(this.month_combo_box);
-            this.body_register_form.Controls.Add(this.label_date_of_birth);
-            this.body_register_form.Controls.Add(this.female_radio_button);
-            this.body_register_form.Controls.Add(this.male_radio_button);
-            this.body_register_form.Controls.Add(this.label_gender);
-            this.body_register_form.Controls.Add(this.last_name_textbox);
-            this.body_register_form.Controls.Add(this.label_last_name);
-            this.body_register_form.Controls.Add(this.middle_name_textbox);
-            this.body_register_form.Controls.Add(this.label_middle_name);
-            this.body_register_form.Controls.Add(this.label_first_name);
+            this.body_register_form.Controls.Add(this.DayComboBox);
+            this.body_register_form.Controls.Add(this.FirstNameTextbox);
+            this.body_register_form.Controls.Add(this.YearComboBox);
+            this.body_register_form.Controls.Add(this.MonthComboBox);
+            this.body_register_form.Controls.Add(this.DateOfBirthLabel);
+            this.body_register_form.Controls.Add(this.FemaleRadioButton);
+            this.body_register_form.Controls.Add(this.MaleRadioButton);
+            this.body_register_form.Controls.Add(this.GenderLabel);
+            this.body_register_form.Controls.Add(this.LastNameTextbox);
+            this.body_register_form.Controls.Add(this.LastNameLabel);
+            this.body_register_form.Controls.Add(this.MiddleNameTextbox);
+            this.body_register_form.Controls.Add(this.MiddleNameLabel);
+            this.body_register_form.Controls.Add(this.FirstNameLabel);
             this.body_register_form.Dock = System.Windows.Forms.DockStyle.Fill;
             this.body_register_form.Location = new System.Drawing.Point(0, 76);
             this.body_register_form.Name = "body_register_form";
@@ -143,257 +143,257 @@ namespace Student_Registration_Form
             this.body_register_form.TabIndex = 4;
             this.body_register_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
-            // day_combo_box
+            // DayComboBox
             // 
-            this.day_combo_box.BackColor = System.Drawing.Color.Transparent;
-            this.day_combo_box.BorderRadius = 8;
-            this.day_combo_box.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.day_combo_box.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.day_combo_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.day_combo_box.FocusedColor = System.Drawing.Color.Empty;
-            this.day_combo_box.FocusedState.Parent = this.day_combo_box;
-            this.day_combo_box.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.day_combo_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
-            this.day_combo_box.FormattingEnabled = true;
-            this.day_combo_box.HoverState.Parent = this.day_combo_box;
-            this.day_combo_box.IntegralHeight = false;
-            this.day_combo_box.ItemHeight = 28;
-            this.day_combo_box.ItemsAppearance.Parent = this.day_combo_box;
-            this.day_combo_box.Location = new System.Drawing.Point(9, 356);
-            this.day_combo_box.MaxDropDownItems = 10;
-            this.day_combo_box.Name = "day_combo_box";
-            this.day_combo_box.ShadowDecoration.Parent = this.day_combo_box;
-            this.day_combo_box.Size = new System.Drawing.Size(101, 34);
-            this.day_combo_box.TabIndex = 6;
+            this.DayComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.DayComboBox.BorderRadius = 8;
+            this.DayComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DayComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.DayComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DayComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.DayComboBox.FocusedState.Parent = this.DayComboBox;
+            this.DayComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
+            this.DayComboBox.FormattingEnabled = true;
+            this.DayComboBox.HoverState.Parent = this.DayComboBox;
+            this.DayComboBox.IntegralHeight = false;
+            this.DayComboBox.ItemHeight = 28;
+            this.DayComboBox.ItemsAppearance.Parent = this.DayComboBox;
+            this.DayComboBox.Location = new System.Drawing.Point(9, 356);
+            this.DayComboBox.MaxDropDownItems = 10;
+            this.DayComboBox.Name = "DayComboBox";
+            this.DayComboBox.ShadowDecoration.Parent = this.DayComboBox;
+            this.DayComboBox.Size = new System.Drawing.Size(101, 34);
+            this.DayComboBox.TabIndex = 6;
             // 
-            // first_name_textbox
+            // FirstNameTextbox
             // 
-            this.first_name_textbox.BorderRadius = 8;
-            this.first_name_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.first_name_textbox.DefaultText = "";
-            this.first_name_textbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.first_name_textbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.first_name_textbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.first_name_textbox.DisabledState.Parent = this.first_name_textbox;
-            this.first_name_textbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.first_name_textbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.first_name_textbox.FocusedState.Parent = this.first_name_textbox;
-            this.first_name_textbox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.first_name_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
-            this.first_name_textbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.first_name_textbox.HoverState.Parent = this.first_name_textbox;
-            this.first_name_textbox.Location = new System.Drawing.Point(9, 44);
-            this.first_name_textbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.first_name_textbox.Name = "first_name_textbox";
-            this.first_name_textbox.PasswordChar = '\0';
-            this.first_name_textbox.PlaceholderText = "";
-            this.first_name_textbox.SelectedText = "";
-            this.first_name_textbox.ShadowDecoration.Parent = this.first_name_textbox;
-            this.first_name_textbox.Size = new System.Drawing.Size(317, 36);
-            this.first_name_textbox.TabIndex = 1;
+            this.FirstNameTextbox.BorderRadius = 8;
+            this.FirstNameTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FirstNameTextbox.DefaultText = "";
+            this.FirstNameTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.FirstNameTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.FirstNameTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FirstNameTextbox.DisabledState.Parent = this.FirstNameTextbox;
+            this.FirstNameTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FirstNameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FirstNameTextbox.FocusedState.Parent = this.FirstNameTextbox;
+            this.FirstNameTextbox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
+            this.FirstNameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FirstNameTextbox.HoverState.Parent = this.FirstNameTextbox;
+            this.FirstNameTextbox.Location = new System.Drawing.Point(9, 44);
+            this.FirstNameTextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FirstNameTextbox.Name = "FirstNameTextbox";
+            this.FirstNameTextbox.PasswordChar = '\0';
+            this.FirstNameTextbox.PlaceholderText = "";
+            this.FirstNameTextbox.SelectedText = "";
+            this.FirstNameTextbox.ShadowDecoration.Parent = this.FirstNameTextbox;
+            this.FirstNameTextbox.Size = new System.Drawing.Size(317, 36);
+            this.FirstNameTextbox.TabIndex = 1;
             // 
-            // year_combo_box
+            // YearComboBox
             // 
-            this.year_combo_box.BackColor = System.Drawing.Color.Transparent;
-            this.year_combo_box.BorderRadius = 8;
-            this.year_combo_box.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.year_combo_box.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.year_combo_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.year_combo_box.FocusedColor = System.Drawing.Color.Empty;
-            this.year_combo_box.FocusedState.Parent = this.year_combo_box;
-            this.year_combo_box.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.year_combo_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
-            this.year_combo_box.FormattingEnabled = true;
-            this.year_combo_box.HoverState.Parent = this.year_combo_box;
-            this.year_combo_box.IntegralHeight = false;
-            this.year_combo_box.ItemHeight = 28;
-            this.year_combo_box.ItemsAppearance.Parent = this.year_combo_box;
-            this.year_combo_box.Location = new System.Drawing.Point(225, 356);
-            this.year_combo_box.MaxDropDownItems = 10;
-            this.year_combo_box.Name = "year_combo_box";
-            this.year_combo_box.ShadowDecoration.Parent = this.year_combo_box;
-            this.year_combo_box.Size = new System.Drawing.Size(101, 34);
-            this.year_combo_box.TabIndex = 8;
+            this.YearComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.YearComboBox.BorderRadius = 8;
+            this.YearComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.YearComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.YearComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.YearComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.YearComboBox.FocusedState.Parent = this.YearComboBox;
+            this.YearComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.YearComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
+            this.YearComboBox.FormattingEnabled = true;
+            this.YearComboBox.HoverState.Parent = this.YearComboBox;
+            this.YearComboBox.IntegralHeight = false;
+            this.YearComboBox.ItemHeight = 28;
+            this.YearComboBox.ItemsAppearance.Parent = this.YearComboBox;
+            this.YearComboBox.Location = new System.Drawing.Point(225, 356);
+            this.YearComboBox.MaxDropDownItems = 10;
+            this.YearComboBox.Name = "YearComboBox";
+            this.YearComboBox.ShadowDecoration.Parent = this.YearComboBox;
+            this.YearComboBox.Size = new System.Drawing.Size(101, 34);
+            this.YearComboBox.TabIndex = 8;
             // 
-            // month_combo_box
+            // MonthComboBox
             // 
-            this.month_combo_box.BackColor = System.Drawing.Color.Transparent;
-            this.month_combo_box.BorderRadius = 8;
-            this.month_combo_box.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.month_combo_box.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.month_combo_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.month_combo_box.FocusedColor = System.Drawing.Color.Empty;
-            this.month_combo_box.FocusedState.Parent = this.month_combo_box;
-            this.month_combo_box.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.month_combo_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
-            this.month_combo_box.FormattingEnabled = true;
-            this.month_combo_box.HoverState.Parent = this.month_combo_box;
-            this.month_combo_box.IntegralHeight = false;
-            this.month_combo_box.ItemHeight = 28;
-            this.month_combo_box.ItemsAppearance.Parent = this.month_combo_box;
-            this.month_combo_box.Location = new System.Drawing.Point(117, 356);
-            this.month_combo_box.MaxDropDownItems = 10;
-            this.month_combo_box.Name = "month_combo_box";
-            this.month_combo_box.ShadowDecoration.Parent = this.month_combo_box;
-            this.month_combo_box.Size = new System.Drawing.Size(101, 34);
-            this.month_combo_box.TabIndex = 7;
+            this.MonthComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.MonthComboBox.BorderRadius = 8;
+            this.MonthComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MonthComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.MonthComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MonthComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.MonthComboBox.FocusedState.Parent = this.MonthComboBox;
+            this.MonthComboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.MonthComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
+            this.MonthComboBox.FormattingEnabled = true;
+            this.MonthComboBox.HoverState.Parent = this.MonthComboBox;
+            this.MonthComboBox.IntegralHeight = false;
+            this.MonthComboBox.ItemHeight = 28;
+            this.MonthComboBox.ItemsAppearance.Parent = this.MonthComboBox;
+            this.MonthComboBox.Location = new System.Drawing.Point(117, 356);
+            this.MonthComboBox.MaxDropDownItems = 10;
+            this.MonthComboBox.Name = "MonthComboBox";
+            this.MonthComboBox.ShadowDecoration.Parent = this.MonthComboBox;
+            this.MonthComboBox.Size = new System.Drawing.Size(101, 34);
+            this.MonthComboBox.TabIndex = 7;
             // 
-            // label_date_of_birth
+            // DateOfBirthLabel
             // 
-            this.label_date_of_birth.AutoSize = true;
-            this.label_date_of_birth.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_date_of_birth.ForeColor = System.Drawing.Color.White;
-            this.label_date_of_birth.Location = new System.Drawing.Point(9, 326);
-            this.label_date_of_birth.Name = "label_date_of_birth";
-            this.label_date_of_birth.Size = new System.Drawing.Size(106, 20);
-            this.label_date_of_birth.TabIndex = 0;
-            this.label_date_of_birth.Text = "Date of Birth";
+            this.DateOfBirthLabel.AutoSize = true;
+            this.DateOfBirthLabel.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateOfBirthLabel.ForeColor = System.Drawing.Color.White;
+            this.DateOfBirthLabel.Location = new System.Drawing.Point(9, 326);
+            this.DateOfBirthLabel.Name = "DateOfBirthLabel";
+            this.DateOfBirthLabel.Size = new System.Drawing.Size(106, 20);
+            this.DateOfBirthLabel.TabIndex = 0;
+            this.DateOfBirthLabel.Text = "Date of Birth";
             // 
-            // female_radio_button
+            // FemaleRadioButton
             // 
-            this.female_radio_button.AutoSize = true;
-            this.female_radio_button.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.female_radio_button.CheckedState.BorderThickness = 0;
-            this.female_radio_button.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.female_radio_button.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.female_radio_button.CheckedState.InnerOffset = -4;
-            this.female_radio_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.female_radio_button.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.female_radio_button.ForeColor = System.Drawing.Color.White;
-            this.female_radio_button.Location = new System.Drawing.Point(76, 286);
-            this.female_radio_button.Name = "female_radio_button";
-            this.female_radio_button.Size = new System.Drawing.Size(77, 23);
-            this.female_radio_button.TabIndex = 5;
-            this.female_radio_button.TabStop = true;
-            this.female_radio_button.Text = "Female";
-            this.female_radio_button.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.female_radio_button.UncheckedState.BorderThickness = 2;
-            this.female_radio_button.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.female_radio_button.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.female_radio_button.UseVisualStyleBackColor = true;
+            this.FemaleRadioButton.AutoSize = true;
+            this.FemaleRadioButton.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FemaleRadioButton.CheckedState.BorderThickness = 0;
+            this.FemaleRadioButton.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FemaleRadioButton.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.FemaleRadioButton.CheckedState.InnerOffset = -4;
+            this.FemaleRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FemaleRadioButton.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FemaleRadioButton.ForeColor = System.Drawing.Color.White;
+            this.FemaleRadioButton.Location = new System.Drawing.Point(76, 286);
+            this.FemaleRadioButton.Name = "FemaleRadioButton";
+            this.FemaleRadioButton.Size = new System.Drawing.Size(77, 23);
+            this.FemaleRadioButton.TabIndex = 5;
+            this.FemaleRadioButton.TabStop = true;
+            this.FemaleRadioButton.Text = "Female";
+            this.FemaleRadioButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.FemaleRadioButton.UncheckedState.BorderThickness = 2;
+            this.FemaleRadioButton.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.FemaleRadioButton.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.FemaleRadioButton.UseVisualStyleBackColor = true;
             // 
-            // male_radio_button
+            // MaleRadioButton
             // 
-            this.male_radio_button.AutoSize = true;
-            this.male_radio_button.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.male_radio_button.CheckedState.BorderThickness = 0;
-            this.male_radio_button.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.male_radio_button.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.male_radio_button.CheckedState.InnerOffset = -4;
-            this.male_radio_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.male_radio_button.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.male_radio_button.ForeColor = System.Drawing.Color.White;
-            this.male_radio_button.Location = new System.Drawing.Point(9, 286);
-            this.male_radio_button.Name = "male_radio_button";
-            this.male_radio_button.Size = new System.Drawing.Size(61, 23);
-            this.male_radio_button.TabIndex = 4;
-            this.male_radio_button.TabStop = true;
-            this.male_radio_button.Text = "Male";
-            this.male_radio_button.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.male_radio_button.UncheckedState.BorderThickness = 2;
-            this.male_radio_button.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.male_radio_button.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.male_radio_button.UseVisualStyleBackColor = true;
+            this.MaleRadioButton.AutoSize = true;
+            this.MaleRadioButton.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MaleRadioButton.CheckedState.BorderThickness = 0;
+            this.MaleRadioButton.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MaleRadioButton.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.MaleRadioButton.CheckedState.InnerOffset = -4;
+            this.MaleRadioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MaleRadioButton.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaleRadioButton.ForeColor = System.Drawing.Color.White;
+            this.MaleRadioButton.Location = new System.Drawing.Point(9, 286);
+            this.MaleRadioButton.Name = "MaleRadioButton";
+            this.MaleRadioButton.Size = new System.Drawing.Size(61, 23);
+            this.MaleRadioButton.TabIndex = 4;
+            this.MaleRadioButton.TabStop = true;
+            this.MaleRadioButton.Text = "Male";
+            this.MaleRadioButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.MaleRadioButton.UncheckedState.BorderThickness = 2;
+            this.MaleRadioButton.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.MaleRadioButton.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.MaleRadioButton.UseVisualStyleBackColor = true;
             // 
-            // label_gender
+            // GenderLabel
             // 
-            this.label_gender.AutoSize = true;
-            this.label_gender.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_gender.ForeColor = System.Drawing.Color.White;
-            this.label_gender.Location = new System.Drawing.Point(5, 256);
-            this.label_gender.Name = "label_gender";
-            this.label_gender.Size = new System.Drawing.Size(65, 20);
-            this.label_gender.TabIndex = 0;
-            this.label_gender.Text = "Gender";
+            this.GenderLabel.AutoSize = true;
+            this.GenderLabel.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenderLabel.ForeColor = System.Drawing.Color.White;
+            this.GenderLabel.Location = new System.Drawing.Point(5, 256);
+            this.GenderLabel.Name = "GenderLabel";
+            this.GenderLabel.Size = new System.Drawing.Size(65, 20);
+            this.GenderLabel.TabIndex = 0;
+            this.GenderLabel.Text = "Gender";
             // 
-            // last_name_textbox
+            // LastNameTextbox
             // 
-            this.last_name_textbox.BorderRadius = 8;
-            this.last_name_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.last_name_textbox.DefaultText = "";
-            this.last_name_textbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.last_name_textbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.last_name_textbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.last_name_textbox.DisabledState.Parent = this.last_name_textbox;
-            this.last_name_textbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.last_name_textbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.last_name_textbox.FocusedState.Parent = this.last_name_textbox;
-            this.last_name_textbox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.last_name_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
-            this.last_name_textbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.last_name_textbox.HoverState.Parent = this.last_name_textbox;
-            this.last_name_textbox.Location = new System.Drawing.Point(9, 204);
-            this.last_name_textbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.last_name_textbox.Name = "last_name_textbox";
-            this.last_name_textbox.PasswordChar = '\0';
-            this.last_name_textbox.PlaceholderText = "";
-            this.last_name_textbox.SelectedText = "";
-            this.last_name_textbox.ShadowDecoration.Parent = this.last_name_textbox;
-            this.last_name_textbox.Size = new System.Drawing.Size(317, 36);
-            this.last_name_textbox.TabIndex = 3;
+            this.LastNameTextbox.BorderRadius = 8;
+            this.LastNameTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LastNameTextbox.DefaultText = "";
+            this.LastNameTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.LastNameTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.LastNameTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LastNameTextbox.DisabledState.Parent = this.LastNameTextbox;
+            this.LastNameTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LastNameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LastNameTextbox.FocusedState.Parent = this.LastNameTextbox;
+            this.LastNameTextbox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastNameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
+            this.LastNameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LastNameTextbox.HoverState.Parent = this.LastNameTextbox;
+            this.LastNameTextbox.Location = new System.Drawing.Point(9, 204);
+            this.LastNameTextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.LastNameTextbox.Name = "LastNameTextbox";
+            this.LastNameTextbox.PasswordChar = '\0';
+            this.LastNameTextbox.PlaceholderText = "";
+            this.LastNameTextbox.SelectedText = "";
+            this.LastNameTextbox.ShadowDecoration.Parent = this.LastNameTextbox;
+            this.LastNameTextbox.Size = new System.Drawing.Size(317, 36);
+            this.LastNameTextbox.TabIndex = 3;
             // 
-            // label_last_name
+            // LastNameLabel
             // 
-            this.label_last_name.AutoSize = true;
-            this.label_last_name.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_last_name.ForeColor = System.Drawing.Color.White;
-            this.label_last_name.Location = new System.Drawing.Point(5, 174);
-            this.label_last_name.Name = "label_last_name";
-            this.label_last_name.Size = new System.Drawing.Size(90, 20);
-            this.label_last_name.TabIndex = 0;
-            this.label_last_name.Text = "Last Name";
+            this.LastNameLabel.AutoSize = true;
+            this.LastNameLabel.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastNameLabel.ForeColor = System.Drawing.Color.White;
+            this.LastNameLabel.Location = new System.Drawing.Point(5, 174);
+            this.LastNameLabel.Name = "LastNameLabel";
+            this.LastNameLabel.Size = new System.Drawing.Size(90, 20);
+            this.LastNameLabel.TabIndex = 0;
+            this.LastNameLabel.Text = "Last Name";
             // 
-            // middle_name_textbox
+            // MiddleNameTextbox
             // 
-            this.middle_name_textbox.BorderRadius = 8;
-            this.middle_name_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.middle_name_textbox.DefaultText = "";
-            this.middle_name_textbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.middle_name_textbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.middle_name_textbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.middle_name_textbox.DisabledState.Parent = this.middle_name_textbox;
-            this.middle_name_textbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.middle_name_textbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.middle_name_textbox.FocusedState.Parent = this.middle_name_textbox;
-            this.middle_name_textbox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.middle_name_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
-            this.middle_name_textbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.middle_name_textbox.HoverState.Parent = this.middle_name_textbox;
-            this.middle_name_textbox.Location = new System.Drawing.Point(9, 124);
-            this.middle_name_textbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.middle_name_textbox.Name = "middle_name_textbox";
-            this.middle_name_textbox.PasswordChar = '\0';
-            this.middle_name_textbox.PlaceholderText = "";
-            this.middle_name_textbox.SelectedText = "";
-            this.middle_name_textbox.ShadowDecoration.Parent = this.middle_name_textbox;
-            this.middle_name_textbox.Size = new System.Drawing.Size(317, 36);
-            this.middle_name_textbox.TabIndex = 2;
+            this.MiddleNameTextbox.BorderRadius = 8;
+            this.MiddleNameTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.MiddleNameTextbox.DefaultText = "";
+            this.MiddleNameTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.MiddleNameTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.MiddleNameTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MiddleNameTextbox.DisabledState.Parent = this.MiddleNameTextbox;
+            this.MiddleNameTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.MiddleNameTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MiddleNameTextbox.FocusedState.Parent = this.MiddleNameTextbox;
+            this.MiddleNameTextbox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MiddleNameTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(54)))), ((int)(((byte)(96)))));
+            this.MiddleNameTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.MiddleNameTextbox.HoverState.Parent = this.MiddleNameTextbox;
+            this.MiddleNameTextbox.Location = new System.Drawing.Point(9, 124);
+            this.MiddleNameTextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MiddleNameTextbox.Name = "MiddleNameTextbox";
+            this.MiddleNameTextbox.PasswordChar = '\0';
+            this.MiddleNameTextbox.PlaceholderText = "";
+            this.MiddleNameTextbox.SelectedText = "";
+            this.MiddleNameTextbox.ShadowDecoration.Parent = this.MiddleNameTextbox;
+            this.MiddleNameTextbox.Size = new System.Drawing.Size(317, 36);
+            this.MiddleNameTextbox.TabIndex = 2;
             // 
-            // label_middle_name
+            // MiddleNameLabel
             // 
-            this.label_middle_name.AutoSize = true;
-            this.label_middle_name.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_middle_name.ForeColor = System.Drawing.Color.White;
-            this.label_middle_name.Location = new System.Drawing.Point(5, 94);
-            this.label_middle_name.Name = "label_middle_name";
-            this.label_middle_name.Size = new System.Drawing.Size(112, 20);
-            this.label_middle_name.TabIndex = 0;
-            this.label_middle_name.Text = "Middle Name";
+            this.MiddleNameLabel.AutoSize = true;
+            this.MiddleNameLabel.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MiddleNameLabel.ForeColor = System.Drawing.Color.White;
+            this.MiddleNameLabel.Location = new System.Drawing.Point(5, 94);
+            this.MiddleNameLabel.Name = "MiddleNameLabel";
+            this.MiddleNameLabel.Size = new System.Drawing.Size(112, 20);
+            this.MiddleNameLabel.TabIndex = 0;
+            this.MiddleNameLabel.Text = "Middle Name";
             // 
-            // label_first_name
+            // FirstNameLabel
             // 
-            this.label_first_name.AutoSize = true;
-            this.label_first_name.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_first_name.ForeColor = System.Drawing.Color.White;
-            this.label_first_name.Location = new System.Drawing.Point(5, 14);
-            this.label_first_name.Name = "label_first_name";
-            this.label_first_name.Size = new System.Drawing.Size(91, 20);
-            this.label_first_name.TabIndex = 0;
-            this.label_first_name.Text = "First Name";
+            this.FirstNameLabel.AutoSize = true;
+            this.FirstNameLabel.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNameLabel.ForeColor = System.Drawing.Color.White;
+            this.FirstNameLabel.Location = new System.Drawing.Point(5, 14);
+            this.FirstNameLabel.Name = "FirstNameLabel";
+            this.FirstNameLabel.Size = new System.Drawing.Size(91, 20);
+            this.FirstNameLabel.TabIndex = 0;
+            this.FirstNameLabel.Text = "First Name";
             // 
             // footer_register_form
             // 
-            this.footer_register_form.Controls.Add(this.register_button);
+            this.footer_register_form.Controls.Add(this.RegisterButton);
             this.footer_register_form.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.footer_register_form.Location = new System.Drawing.Point(0, 484);
             this.footer_register_form.Name = "footer_register_form";
@@ -401,29 +401,29 @@ namespace Student_Registration_Form
             this.footer_register_form.TabIndex = 3;
             this.footer_register_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
-            // register_button
+            // RegisterButton
             // 
-            this.register_button.BorderRadius = 8;
-            this.register_button.CheckedState.Parent = this.register_button;
-            this.register_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.register_button.CustomImages.Parent = this.register_button;
-            this.register_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(149)))));
-            this.register_button.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.register_button.ForeColor = System.Drawing.Color.White;
-            this.register_button.HoverState.Parent = this.register_button;
-            this.register_button.Location = new System.Drawing.Point(9, 2);
-            this.register_button.Name = "register_button";
-            this.register_button.ShadowDecoration.Parent = this.register_button;
-            this.register_button.Size = new System.Drawing.Size(108, 38);
-            this.register_button.TabIndex = 9;
-            this.register_button.Text = "Register";
-            this.register_button.Click += new System.EventHandler(this.register_button_Click);
+            this.RegisterButton.BorderRadius = 8;
+            this.RegisterButton.CheckedState.Parent = this.RegisterButton;
+            this.RegisterButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RegisterButton.CustomImages.Parent = this.RegisterButton;
+            this.RegisterButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(149)))));
+            this.RegisterButton.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegisterButton.ForeColor = System.Drawing.Color.White;
+            this.RegisterButton.HoverState.Parent = this.RegisterButton;
+            this.RegisterButton.Location = new System.Drawing.Point(9, 2);
+            this.RegisterButton.Name = "RegisterButton";
+            this.RegisterButton.ShadowDecoration.Parent = this.RegisterButton;
+            this.RegisterButton.Size = new System.Drawing.Size(108, 38);
+            this.RegisterButton.TabIndex = 9;
+            this.RegisterButton.Text = "Register";
+            this.RegisterButton.Click += new System.EventHandler(this.register_button_Click);
             // 
             // head_register_form
             // 
             this.head_register_form.AutoSize = true;
-            this.head_register_form.Controls.Add(this.label_registration_form);
-            this.head_register_form.Controls.Add(this.label_student);
+            this.head_register_form.Controls.Add(this.RegistrationFormLabel);
+            this.head_register_form.Controls.Add(this.StudentLabel);
             this.head_register_form.Dock = System.Windows.Forms.DockStyle.Top;
             this.head_register_form.Location = new System.Drawing.Point(0, 0);
             this.head_register_form.Name = "head_register_form";
@@ -431,27 +431,27 @@ namespace Student_Registration_Form
             this.head_register_form.TabIndex = 2;
             this.head_register_form.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
-            // label_registration_form
+            // RegistrationFormLabel
             // 
-            this.label_registration_form.AutoSize = true;
-            this.label_registration_form.Font = new System.Drawing.Font("Gadugi", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_registration_form.ForeColor = System.Drawing.Color.White;
-            this.label_registration_form.Location = new System.Drawing.Point(1, 32);
-            this.label_registration_form.Name = "label_registration_form";
-            this.label_registration_form.Size = new System.Drawing.Size(334, 44);
-            this.label_registration_form.TabIndex = 0;
-            this.label_registration_form.Text = "Registration Form";
+            this.RegistrationFormLabel.AutoSize = true;
+            this.RegistrationFormLabel.Font = new System.Drawing.Font("Gadugi", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegistrationFormLabel.ForeColor = System.Drawing.Color.White;
+            this.RegistrationFormLabel.Location = new System.Drawing.Point(1, 32);
+            this.RegistrationFormLabel.Name = "RegistrationFormLabel";
+            this.RegistrationFormLabel.Size = new System.Drawing.Size(334, 44);
+            this.RegistrationFormLabel.TabIndex = 0;
+            this.RegistrationFormLabel.Text = "Registration Form";
             // 
-            // label_student
+            // StudentLabel
             // 
-            this.label_student.AutoSize = true;
-            this.label_student.Font = new System.Drawing.Font("Gadugi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_student.ForeColor = System.Drawing.Color.White;
-            this.label_student.Location = new System.Drawing.Point(3, 1);
-            this.label_student.Name = "label_student";
-            this.label_student.Size = new System.Drawing.Size(123, 35);
-            this.label_student.TabIndex = 0;
-            this.label_student.Text = "Student";
+            this.StudentLabel.AutoSize = true;
+            this.StudentLabel.Font = new System.Drawing.Font("Gadugi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentLabel.ForeColor = System.Drawing.Color.White;
+            this.StudentLabel.Location = new System.Drawing.Point(3, 1);
+            this.StudentLabel.Name = "StudentLabel";
+            this.StudentLabel.Size = new System.Drawing.Size(123, 35);
+            this.StudentLabel.TabIndex = 0;
+            this.StudentLabel.Text = "Student";
             // 
             // RegistrationForm
             // 
@@ -468,7 +468,7 @@ namespace Student_Registration_Form
             this.Load += new System.EventHandler(this.RegistrationForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.artwork_panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.close_button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
             this.form_panel.ResumeLayout(false);
             this.table_layout_registration_form.ResumeLayout(false);
             this.register_form.ResumeLayout(false);
@@ -488,26 +488,26 @@ namespace Student_Registration_Form
         private System.Windows.Forms.Panel form_panel;
         private System.Windows.Forms.TableLayoutPanel table_layout_registration_form;
         private System.Windows.Forms.Panel register_form;
-        private System.Windows.Forms.Label label_registration_form;
-        private System.Windows.Forms.Label label_student;
+        private System.Windows.Forms.Label RegistrationFormLabel;
+        private System.Windows.Forms.Label StudentLabel;
         public System.Windows.Forms.Panel head_register_form;
         private System.Windows.Forms.Panel footer_register_form;
-        private Guna.UI2.WinForms.Guna2Button register_button;
-        private System.Windows.Forms.PictureBox close_button;
+        private Guna.UI2.WinForms.Guna2Button RegisterButton;
+        private System.Windows.Forms.PictureBox closeButton;
         private System.Windows.Forms.Panel body_register_form;
-        private Guna.UI2.WinForms.Guna2ComboBox day_combo_box;
-        private Guna.UI2.WinForms.Guna2TextBox first_name_textbox;
-        private Guna.UI2.WinForms.Guna2ComboBox year_combo_box;
-        private Guna.UI2.WinForms.Guna2ComboBox month_combo_box;
-        private System.Windows.Forms.Label label_date_of_birth;
-        private Guna.UI2.WinForms.Guna2RadioButton female_radio_button;
-        private Guna.UI2.WinForms.Guna2RadioButton male_radio_button;
-        private System.Windows.Forms.Label label_gender;
-        private Guna.UI2.WinForms.Guna2TextBox last_name_textbox;
-        private System.Windows.Forms.Label label_last_name;
-        private Guna.UI2.WinForms.Guna2TextBox middle_name_textbox;
-        private System.Windows.Forms.Label label_middle_name;
-        private System.Windows.Forms.Label label_first_name;
+        private Guna.UI2.WinForms.Guna2ComboBox DayComboBox;
+        private Guna.UI2.WinForms.Guna2TextBox FirstNameTextbox;
+        private Guna.UI2.WinForms.Guna2ComboBox YearComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox MonthComboBox;
+        private System.Windows.Forms.Label DateOfBirthLabel;
+        private Guna.UI2.WinForms.Guna2RadioButton FemaleRadioButton;
+        private Guna.UI2.WinForms.Guna2RadioButton MaleRadioButton;
+        private System.Windows.Forms.Label GenderLabel;
+        private Guna.UI2.WinForms.Guna2TextBox LastNameTextbox;
+        private System.Windows.Forms.Label LastNameLabel;
+        private Guna.UI2.WinForms.Guna2TextBox MiddleNameTextbox;
+        private System.Windows.Forms.Label MiddleNameLabel;
+        private System.Windows.Forms.Label FirstNameLabel;
     }
 }
 

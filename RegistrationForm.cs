@@ -74,43 +74,43 @@ namespace Student_Registration_Form
         public void setDefaultValue()
         {
             // Default Value for Day Combobox
-            day_combo_box.Items.Insert(0, "-Day-");
-            day_combo_box.SelectedIndex = 0;
+            DayComboBox.Items.Insert(0, "-Day-");
+            DayComboBox.SelectedIndex = 0;
 
             // Default Value for Month Combobox
-            month_combo_box.Items.Insert(0, "-Month-");
-            month_combo_box.SelectedIndex = 0;
+            MonthComboBox.Items.Insert(0, "-Month-");
+            MonthComboBox.SelectedIndex = 0;
 
             // Default Value for Year Combobox
-            year_combo_box.Items.Insert(0, "-Year-");
-            year_combo_box.SelectedIndex = 0;
+            YearComboBox.Items.Insert(0, "-Year-");
+            YearComboBox.SelectedIndex = 0;
         }
 
         // Method that populates the Day Combobox
         public void populateDay()
         {
-            for (int x = 1; x <= 31; x++) day_combo_box.Items.Add(x);
+            for (int x = 1; x <= 31; x++) DayComboBox.Items.Add(x);
         }
 
         // Method that populates the Month Combobox
         public void populateMonth()
         {
-            for (int x = 1; x <= 12; x++) month_combo_box.Items.Add(x);
+            for (int x = 1; x <= 12; x++) MonthComboBox.Items.Add(x);
         }
 
         // Method that populates the Year Combobox
         public void populateYear()
         {
-            for (int x = 1900; x <= DateTime.Now.Year; x++) year_combo_box.Items.Add(x);
+            for (int x = 1900; x <= DateTime.Now.Year; x++) YearComboBox.Items.Add(x);
         }
 
         // Method of fetching the data that is written by the user
         public void fetchData()
         {
             // Fetching the name
-            first_name = first_name_textbox.Text;
-            middle_name = middle_name_textbox.Text;
-            last_name = last_name_textbox.Text;
+            first_name = FirstNameTextbox.Text;
+            middle_name = MiddleNameTextbox.Text;
+            last_name = LastNameTextbox.Text;
 
             // Call the checker method 
             checkNull(first_name);
@@ -118,15 +118,15 @@ namespace Student_Registration_Form
             checkNull(last_name);
 
             // Fetching the date of birth
-            day = Int32.Parse(day_combo_box.Text);
-            month = Int32.Parse(month_combo_box.Text);
-            year = Int32.Parse(year_combo_box.Text);
+            day = Int32.Parse(DayComboBox.Text);
+            month = Int32.Parse(MonthComboBox.Text);
+            year = Int32.Parse(YearComboBox.Text);
 
             // Throws an exception if either of them are not selected
-            if (!male_radio_button.Checked && !female_radio_button.Checked) throw new Exception();
+            if (!MaleRadioButton.Checked && !FemaleRadioButton.Checked) throw new Exception();
 
             // set isMale to true when selected else false
-            if (male_radio_button.Checked) isMale = true; else isMale = false;
+            if (MaleRadioButton.Checked) isMale = true; else isMale = false;
         }
 
         // Check if the field is null or empty then throws an exception
